@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="calci.css">
-    <script src="calci.js"></script>
 
 </head>
+
 <body>
-<div class="container">
-        <h1>CALCULATOR</h1>eee
-        <div class="display">
+
+    <div class="main">
+        <div class="container">
+
+            <h1>CALCULATOR</h1>
+            <div class="display">
+                
             <input type="text" id="inputbox" placeholder="Enter numbers" value="">
-        </div>
+            </div>
+            
+            <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="calculateResult()" class="calculatebtn">CALCULATE</button>
+            </div>
+            
+            </div>
+            
+            <div class="history">
+                
+                    <h1>HISTORY</h1>
+                
+                
+                <div id="historydiv">
+                    
+                 </div>
+                 <button onclick="deletefun()">DELETE HISTORY</button>
+            </div>
+    </div>
 
-<div class="buttons">
-<button onclick="clickedvutton(1)">1</button>
-<button onclick="clickedvutton(2)">2</button>
-<button onclick="clickedvutton(3)">3</button>
-<button onclick="clickedvutton('+')">+</button>
-<button onclick="clickedvutton(4)">4</button>
-<button onclick="clickedvutton(5)">5</button>
-<button onclick="clickedvutton(6)">6</button>
-<button onclick="clickedvutton('-')">-</button>
-<button onclick="clickedvutton(7)">7</button>
-<button onclick="clickedvutton(8)">8</button>
-<button onclick="clickedvutton(9)">9</button>
-<button onclick="clickedvutton('*')">*</button>
-<button onclick="clickedvutton(0)">0</button>
 
-<button onclick="clickedvutton('/')">/</button>
-<button onclick="clickedvutton('%')">%</button>
 
-<button onclick="clearDisplay()">C</button>
-
-<button onclick="calculateResult()" class="calculatebtn">CALCULATE</button>
-</div>
-<script>
-    
-</script>
+   
+<script src="calci.js"></script>
 
 </body>
 </html>
