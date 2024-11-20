@@ -1,0 +1,22 @@
+//***********************1*************************************************//
+// let currentInput = '';
+//     function clickedvutton(btnvalue) {
+//         let op = document.getElementById("inputbox");
+//         currentInput += btnvalue;
+//         op.value = currentInput;
+//     }
+//     function calculateResult() {
+//             let result = eval(currentInput);
+//             document.getElementById("inputbox").value = result;
+//             currentInput = result.toString();
+//     }
+//     function clearDisplay() {
+//         currentInput = '';
+//         document.getElementById("inputbox").value = '';
+//     }
+
+// let getitemop = localStorage.getItem("history");
+// let finalgetitemop = JSON.parse(getitemop);
+// console.log(finalgetitemop);
+// console.log(finalgetitemop[index].expression);
+// localStorage.removeItem("finalgetitemop[index]");

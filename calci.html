@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="calci.css">
-    <script src="calci.js"></script>
+    <link rel="stylesheet" href="calci.css" />
+  </head>
 
-</head>
-<body>
-<div class="container">
-        <h1>CALCULATOR</h1>eee
+  <body>
+    <div class="main">
+      <div class="container">
+        <h1>CALCULATOR</h1>
         <div class="display">
-            <input type="text" id="inputbox" placeholder="Enter numbers" value="">
+          <input
+            type="text"
+            id="inputbox"
+            placeholder="Enter numbers"
+            value="" />
         </div>
 
-<div class="buttons">
-<button onclick="clickedvutton(1)">1</button>
-<button onclick="clickedvutton(2)">2</button>
-<button onclick="clickedvutton(3)">3</button>
-<button onclick="clickedvutton('+')">+</button>
-<button onclick="clickedvutton(4)">4</button>
-<button onclick="clickedvutton(5)">5</button>
-<button onclick="clickedvutton(6)">6</button>
-<button onclick="clickedvutton('-')">-</button>
-<button onclick="clickedvutton(7)">7</button>
-<button onclick="clickedvutton(8)">8</button>
-<button onclick="clickedvutton(9)">9</button>
-<button onclick="clickedvutton('*')">*</button>
-<button onclick="clickedvutton(0)">0</button>
+        <div class="buttons">
+          <button onclick="clearDisplay()">C</button>
+          <button onclick="calculateResult()" class="calculatebtn">
+            CALCULATE
+          </button>
+        </div>
+      </div>
 
-<button onclick="clickedvutton('/')">/</button>
-<button onclick="clickedvutton('%')">%</button>
+      <div class="history">
+        <h1>HISTORY</h1>
+        <div class="filter">
+          <h1>filter</h1>
+          <button onclick="filterg50()">op>50</button>
+          <button onclick="filterl150()">op<150</button>
+          <button onclick="filterlg50()">op>50 and op<150</button>
+          <button onclick="operands()">operands>2</button>
+        </div>
+        <div id="historydiv"></div>
+        <button onclick="deletefun()">DELETE HISTORY</button>
+      </div>
+    </div>
 
-<button onclick="clearDisplay()">C</button>
-
-<button onclick="calculateResult()" class="calculatebtn">CALCULATE</button>
-</div>
-<script>
-    
-</script>
-
-</body>
+    <script src="calci.js"></script>
+  </body>
 </html>
