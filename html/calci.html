@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../css/calci.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="container">
+        <h1>CALCULATOR</h1>
+        <div class="display">
+          <input
+            type="text"
+            id="inputbox"
+            placeholder="Enter numbers"
+            value="" />
+        </div>
+
+        <div class="buttons">
+          <button id="clearDisplay">C</button>
+          <button id="calculateResult" class="calculatebtn">CALCULATEd</button>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="filter">
+          <h1>filter</h1>
+          <button id="filterg50">op > 50</button>
+          <button id="filterl150">op < 150</button>
+          <button id="filterlg50">op > 50 and op < 150</button>
+          <button id="operands">operands > 2</button>
+        </div>
+        <h1>HISTORY</h1>
+        <div id="historydiv"></div>
+        <button id="deletefun">DELETE HISTORY</button>
+      </div>
+    </div>
+
+    <script type="module" src="../js/controller.js"></script>
+  </body>
+</html>
