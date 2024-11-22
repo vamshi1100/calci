@@ -1,0 +1,87 @@
+//filter buttons >50,<150,b/w 50 and 150,operands
+
+// //********************filter buttons************************************** */
+// //function to handle filter >50
+// export function filterg50() {
+//   let storedHistory = localStorage.getItem("history");
+//   let historyDiv = document.getElementById("historydiv");
+//   historyDiv.innerHTML = "";
+//   if (storedHistory) {
+//     let parsedHistory = JSON.parse(storedHistory);
+//     // console.log(parsedHistory);
+//     let filterresult = parsedHistory.filter((items) => {
+//       return items.result > 50;
+//     });
+//     filterresult.forEach((items) => {
+//       let p = document.createElement("p");
+//       p.innerText = `${items.expression} = ${items.result}`;
+//       historyDiv.prepend(p);
+//     });
+//     console.log(filterresult);
+//   }
+// }
+
+// export function filterl150() {
+//   let storedHistory = localStorage.getItem("history");
+//   let historyDiv = document.getElementById("historydiv");
+//   historyDiv.innerHTML = "";
+//   if (storedHistory) {
+//     let parsedHistory = JSON.parse(storedHistory);
+//     // console.log(parsedHistory);
+//     let filterresult = parsedHistory.filter((items) => {
+//       return items.result < 150;
+//     });
+//     filterresult.forEach((items) => {
+//       let p = document.createElement("p");
+//       p.innerText = `${items.expression} = ${items.result}`;
+//       historyDiv.prepend(p);
+//     });
+//     console.log(filterresult);
+//   }
+// }
+
+// export function filterlg50() {
+//   let storedHistory = localStorage.getItem("history");
+//   let historyDiv = document.getElementById("historydiv");
+//   historyDiv.innerHTML = "";
+//   if (storedHistory) {
+//     let parsedHistory = JSON.parse(storedHistory);
+//     // console.log(parsedHistory);
+//     let filterresult = parsedHistory.filter((items) => {
+//       return items.result > 50 && items.result < 150;
+//     });
+//     filterresult.forEach((items) => {
+//       let p = document.createElement("p");
+//       p.innerText = `${items.expression} = ${items.result}`;
+//       historyDiv.prepend(p);
+//     });
+//     console.log(filterresult);
+//   }
+// }
+
+// export function operands() {
+//   let storedHistory = localStorage.getItem("history");
+//   let historyDiv = document.getElementById("historydiv");
+
+//   // Clear the historyDiv once before appending
+//   historyDiv.innerHTML = "";
+
+//   if (storedHistory) {
+//     let parsedHistory = JSON.parse(storedHistory);
+//     console.log(parsedHistory);
+
+//     parsedHistory.forEach((items) => {
+//       // Count the number of operands in the expression
+//       let operandsCount = items.expression
+//         .split(/[+\-*/^()]/)
+//         .filter(Boolean).length;
+
+//       // Only display the expression if it has more than 3 operands
+//       if (operandsCount > 2) {
+//         let p = document.createElement("p");
+//         p.innerText = `${items.expression} = ${items.result}`;
+//         historyDiv.prepend(p); // Prepend to show the most recent calculations first
+//       }
+//     });
+//   }
+// }
