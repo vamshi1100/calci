@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="calci.css">
+    <link rel="stylesheet" href="calci.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <div class="main">
-        <div class="container">
+      <div class="container">
+        <h1>CALCULATOR</h1>
+        <div class="display">
+          <input
+            type="text"
+            id="inputbox"
+            placeholder="Enter numbers"
+            value="" />
+        </div>
 
-            <h1>CALCULATOR</h1>
-            <div class="display">
-                
-            <input type="text" id="inputbox" placeholder="Enter numbers" value="">
-            </div>
-            
-            <div class="buttons">
-            <button onclick="clearDisplay()">C</button>
-            <button onclick="calculateResult()" class="calculatebtn">CALCULATE</button>
-            </div>
-            
-            </div>
-            
-            <div class="history">
-                
-                    <h1>HISTORY</h1>
-                
-                
-                <div id="historydiv">
-                    
-                 </div>
-                 <button onclick="deletefun()">DELETE HISTORY</button>
-            </div>
+        <div class="buttons">
+          <button onclick="clearDisplay()">C</button>
+          <button onclick="calculateResult()" class="calculatebtn">
+            CALCULATE
+          </button>
+        </div>
+      </div>
+
+      <div class="history">
+        <h1>HISTORY</h1>
+        <div id="historydiv"></div>
+        <button onclick="deletefun()">DELETE HISTORY</button>
+      </div>
     </div>
 
-
-
-   
-<script src="calci.js"></script>
-
-</body>
+    <script src="calci.js"></script>
+  </body>
 </html>
