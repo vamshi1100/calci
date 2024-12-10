@@ -3,42 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
+    <title>Dynamic Calculators</title>
     <link rel="stylesheet" href="../css/calci.css" />
   </head>
-
   <body>
-    <div class="main">
-      <div class="container">
-        <h1>CALCULATOR</h1>
-        <div class="display">
-          <input
-            type="text"
-            id="inputbox"
-            placeholder="Enter numbers"
-            value="" />
-        </div>
-
-        <div class="buttons">
-          <button id="clearDisplay">C</button>
-          <button id="calculateResult" class="calculatebtn">CALCULATEd</button>
-        </div>
-      </div>
-
-      <div class="history">
-        <div class="filter">
-          <h1>filter(choices)</h1>
-          <h1>1:>50,2:<150 <br />3:b/w 50 &150, <br />4:no.of opreands</h1>
-          <input type="number" id="choice" placeholder="Enter choices""/>
-          <input type="number" id="filter" placeholder="Enter value" />
-          <div id="errorDiv" style="color: red"></div>
-        </div>
-        <h1>HISTORY</h1>
-        <div id="historydiv"></div>
-        <button id="deletefun">DELETE HISTORY</button>
-      </div>
-    </div>
-
+    <div id="calculatorsContainer"></div>
     <script type="module" src="../javascript/index.js"></script>
   </body>
 </html>
